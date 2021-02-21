@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/tiffwu1027.github.io/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/tiffwu1027.github.io/static/js/main.fe58f78a.chunk.js",
-    "main.js.map": "/tiffwu1027.github.io/static/js/main.fe58f78a.chunk.js.map",
-    "runtime-main.js": "/tiffwu1027.github.io/static/js/runtime-main.64767a89.js",
-    "runtime-main.js.map": "/tiffwu1027.github.io/static/js/runtime-main.64767a89.js.map",
-    "static/js/2.57eaebc6.chunk.js": "/tiffwu1027.github.io/static/js/2.57eaebc6.chunk.js",
-    "static/js/2.57eaebc6.chunk.js.map": "/tiffwu1027.github.io/static/js/2.57eaebc6.chunk.js.map",
-    "static/js/3.77819e11.chunk.js": "/tiffwu1027.github.io/static/js/3.77819e11.chunk.js",
-    "static/js/3.77819e11.chunk.js.map": "/tiffwu1027.github.io/static/js/3.77819e11.chunk.js.map",
-    "index.html": "/tiffwu1027.github.io/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/tiffwu1027.github.io/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.57eaebc6.chunk.js.LICENSE.txt": "/tiffwu1027.github.io/static/js/2.57eaebc6.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/tiffwu1027.github.io/static/media/logo.6ce24c58.svg"
+    "main.css": "/tiffany-wu/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/tiffany-wu/static/js/main.fe58f78a.chunk.js",
+    "main.js.map": "/tiffany-wu/static/js/main.fe58f78a.chunk.js.map",
+    "runtime-main.js": "/tiffany-wu/static/js/runtime-main.1b787bca.js",
+    "runtime-main.js.map": "/tiffany-wu/static/js/runtime-main.1b787bca.js.map",
+    "static/js/2.57eaebc6.chunk.js": "/tiffany-wu/static/js/2.57eaebc6.chunk.js",
+    "static/js/2.57eaebc6.chunk.js.map": "/tiffany-wu/static/js/2.57eaebc6.chunk.js.map",
+    "static/js/3.77819e11.chunk.js": "/tiffany-wu/static/js/3.77819e11.chunk.js",
+    "static/js/3.77819e11.chunk.js.map": "/tiffany-wu/static/js/3.77819e11.chunk.js.map",
+    "index.html": "/tiffany-wu/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/tiffany-wu/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.57eaebc6.chunk.js.LICENSE.txt": "/tiffany-wu/static/js/2.57eaebc6.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/tiffany-wu/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.64767a89.js",
+    "static/js/runtime-main.1b787bca.js",
     "static/js/2.57eaebc6.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
     "static/js/main.fe58f78a.chunk.js"

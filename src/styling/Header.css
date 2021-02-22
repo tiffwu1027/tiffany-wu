@@ -1,0 +1,13 @@
+
+#nav-wrap > .nav {
+    list-style: none;
+}
+
+li {
+    display: inline;
+    padding: 10px 30px;
+}
+
+#nav-wrap {
+    text-align: center;
+}

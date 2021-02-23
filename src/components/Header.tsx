@@ -1,57 +1,111 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { makeStyles, Theme, useTheme } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
+import Typography from '@material-ui/core/Typography';
+import Box from '@material-ui/core/Box';
+import SwipeableViews from 'react-swipeable-views';
 import '../styling/Header.css';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faGithub, faLinkedin, faInstagram, faTwitter} from '@fortawesome/free-brands-svg-icons';
-import {faChevronCircleDown, faHome} from '@fortawesome/free-solid-svg-icons';
+import Introduction from './Introduction';
+import { About } from './About';
+import { faChevronCircleDown, faHome } from '@fortawesome/free-solid-svg-icons';
+import { createMuiTheme } from '@material-ui/core/styles';
+import blue from '@material-ui/core/colors/blue';
+import indigo from '@material-ui/core/colors/indigo';
+import blueGrey from '@material-ui/core/colors/blueGrey';
+import grey from '@material-ui/core/colors/grey';
+import { ThemeProvider } from '@material-ui/core';
 
-let githubLink : string = "https://github.com/tiffwu1027";
-let linkedInLink: string = "https://www.linkedin.com/in/tiffany-wu-1027/";
-let instagramLink: string = "https://www.instagram.com/toytoy157/";
-let twitterLink: string = "https://twitter.com/tiffwu1027";
-
-class Header extends Component {
-  render() {
-    return (
-      <header id="home">
-
-      <nav id="nav-wrap">
-
-         {/* <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a className="mobile-btn" href="#home" title="Hide navigation">Hide navigation</a> */}
-
-         <ul id="nav" className="nav">
-            <li className="current"><a className="smoothscroll" href="#home"><FontAwesomeIcon icon={faHome} size="lg" /></a></li>
-            <li><a className="smoothscroll" href="#about">About</a></li>
-	        <li><a className="smoothscroll" href="#resume">Resume</a></li>
-            <li><a className="smoothscroll" href="#research">Research</a></li>
-            <li><a className="smoothscroll" href="#portfolio">Projects</a></li>
-            <li><a className="smoothscroll" href="#fun">Fun</a></li>
-            <li><a className="smoothscroll" href="#contact">Contact</a></li>
-         </ul>
-
-      </nav>
-
-      <div className="row banner">
-         <div className="banner-text">
-            <h1 className="responsive-headline">Tiffany Wu.</h1>
-            <h3>Hello! I'm an aspiring vision science researcher from UBC with an interest in computation and visual attention.</h3>
-            <hr />
-            <ul className="social">
-               <li><a href={githubLink}><FontAwesomeIcon icon={faGithub} size="lg" /></a></li>
-               <li><a href={linkedInLink}><FontAwesomeIcon icon={faLinkedin} size="lg" /></a></li>
-               <li><a href={instagramLink}><FontAwesomeIcon icon={faInstagram} size="lg" /></a></li>
-               <li><a href={twitterLink}><FontAwesomeIcon icon={faTwitter} size="lg" /></a></li>
-            </ul>
-         </div>
-      </div>
-
-      <p className="scrolldown">
-         <a className="smoothscroll" href="#about"><FontAwesomeIcon icon={faChevronCircleDown} size="lg" /></a>
-      </p>
-
-   </header>
-    );
-  }
+interface TabPanelProps {
+    children?: React.ReactNode;
+    dir?: string;
+    index: any;
+    value: any;
 }
 
-export default Header;
+function TabPanel(props: TabPanelProps) {
+    const { children, value, index, ...other } = props;
+
+    return (
+        <div
+            role="tabpanel"
+            hidden={value !== index}
+            id={`simple-tabpanel-${index}`}
+            aria-labelledby={`simple-tab-${index}`}
+            {...other}
+        >
+            {value === index && (
+                <Box p={3}>
+                    <Typography>{children}</Typography>
+                </Box>
+            )}
+        </div>
+    );
+}
+
+function a11yProps(index: any) {
+    return {
+        id: `simple-tab-${index}`,
+        'aria-controls': `simple-tabpanel-${index}`,
+    };
+}
+
+const useStyles = makeStyles((theme: Theme) => ({
+    root: {
+        flexGrow: 1,
+        backgroundColor: theme.palette.background.paper,
+    },
+}));
+
+
+export default function Header() {
+    const classes = useStyles();
+    const theme = createMuiTheme({
+        palette: {
+            primary: indigo,
+            secondary: grey
+        }
+    });
+    const [value, setValue] = React.useState(0);
+
+    const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
+        setValue(newValue);
+    };
+
+    const handleChangeIndex = (index: number) => {
+        setValue(index);
+    };
+
+    return (
+        <div className={classes.root}>
+            <ThemeProvider theme={theme}>
+                <AppBar position="static">
+                    <Tabs value={value} onChange={handleChange} aria-label="simple tabs example" centered>
+                        <Tab label="Home" {...a11yProps(0)} />
+                        <Tab label="About" {...a11yProps(1)} />
+                        <Tab label="Research" {...a11yProps(2)} />
+                        <Tab label="Projects" {...a11yProps(3)} />
+                        <Tab label="Fun" {...a11yProps(4)} />
+                        <Tab label="Contact" {...a11yProps(5)} />
+                    </Tabs>
+                </AppBar>
+                <SwipeableViews
+                    axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
+                    index={value}
+                    onChangeIndex={handleChangeIndex}
+                >
+                    <TabPanel value={value} index={0} dir={theme.direction}>
+                        <Introduction></Introduction>
+                    </TabPanel>
+                    <TabPanel value={value} index={1} dir={theme.direction}>
+                        <About></About>
+                    </TabPanel>
+                    <TabPanel value={value} index={2} dir={theme.direction}>
+                        Item Three
+                    </TabPanel>
+                </SwipeableViews>
+            </ThemeProvider>
+        </div>
+    );
+}

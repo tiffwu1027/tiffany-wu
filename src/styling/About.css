@@ -1,0 +1,16 @@
+.headShot {
+    max-width: 40%;
+    padding: 20px;
+}
+
+.headshot-img {
+    size: inherit;
+    max-width: 50%;
+    border-radius: 300px;
+}
+
+/* #img {
+    size: inherit;
+max-width: 50%;
+border-radius: 500px;
+} */

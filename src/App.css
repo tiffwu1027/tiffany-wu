@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  /* background-image: url('./images/trianglify-lowres.png');
+  background-size: cover; */
 }
 
 .App-logo {
@@ -35,4 +37,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body > #root > div {
+  height: 90vh;
 }

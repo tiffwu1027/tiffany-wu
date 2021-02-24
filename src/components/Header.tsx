@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import SwipeableViews from 'react-swipeable-views';
 import '../styling/Header.css';
-import Introduction from './Introduction';
+import { Introduction } from './Introduction';
 import { About } from './About';
 import { faChevronCircleDown, faHome } from '@fortawesome/free-solid-svg-icons';
 import { createMuiTheme } from '@material-ui/core/styles';
@@ -16,6 +16,11 @@ import indigo from '@material-ui/core/colors/indigo';
 import blueGrey from '@material-ui/core/colors/blueGrey';
 import grey from '@material-ui/core/colors/grey';
 import { ThemeProvider } from '@material-ui/core';
+import { Research } from './Research';
+import { Contact } from './Contact';
+import { Fun } from './Fun';
+import {Projects } from './Projects';
+
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -54,12 +59,13 @@ function a11yProps(index: any) {
 const useStyles = makeStyles((theme: Theme) => ({
     root: {
         flexGrow: 1,
-        backgroundColor: theme.palette.background.paper,
+        backgroundColor: 'grey',
     },
 }));
 
 
-export default function Header() {
+
+export const Header: React.FC = () => {
     const classes = useStyles();
     const theme = createMuiTheme({
         palette: {
@@ -80,7 +86,7 @@ export default function Header() {
     return (
         <div className={classes.root}>
             <ThemeProvider theme={theme}>
-                <AppBar position="static">
+                <AppBar className="app-bar" position="static" style={{background: 'transparent', boxShadow: 'none'}}>
                     <Tabs value={value} onChange={handleChange} aria-label="simple tabs example" centered>
                         <Tab label="Home" {...a11yProps(0)} />
                         <Tab label="About" {...a11yProps(1)} />
@@ -102,7 +108,16 @@ export default function Header() {
                         <About></About>
                     </TabPanel>
                     <TabPanel value={value} index={2} dir={theme.direction}>
-                        Item Three
+                        <Research />
+                    </TabPanel>
+                    <TabPanel value={value} index={3} dir={theme.direction}>
+                        <Projects />
+                    </TabPanel>
+                    <TabPanel value={value} index={4} dir={theme.direction}>
+                        <Fun />
+                    </TabPanel>
+                    <TabPanel value={value} index={5} dir={theme.direction}>
+                        <Contact />
                     </TabPanel>
                 </SwipeableViews>
             </ThemeProvider>

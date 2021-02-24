@@ -17,7 +17,6 @@ export const About: React.FC<Props> = () => {
       <div className="row banner">
          <div className="banner-text">
             <h1 className="responsive-headline">About Me</h1>
-            <hr />
          </div>
       </div>
 

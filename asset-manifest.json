@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/tiffany-wu/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/tiffany-wu/static/js/main.fe58f78a.chunk.js",
-    "main.js.map": "/tiffany-wu/static/js/main.fe58f78a.chunk.js.map",
-    "runtime-main.js": "/tiffany-wu/static/js/runtime-main.1b787bca.js",
-    "runtime-main.js.map": "/tiffany-wu/static/js/runtime-main.1b787bca.js.map",
-    "static/js/2.57eaebc6.chunk.js": "/tiffany-wu/static/js/2.57eaebc6.chunk.js",
-    "static/js/2.57eaebc6.chunk.js.map": "/tiffany-wu/static/js/2.57eaebc6.chunk.js.map",
-    "static/js/3.77819e11.chunk.js": "/tiffany-wu/static/js/3.77819e11.chunk.js",
-    "static/js/3.77819e11.chunk.js.map": "/tiffany-wu/static/js/3.77819e11.chunk.js.map",
+    "main.css": "/tiffany-wu/static/css/main.2948fecd.chunk.css",
+    "main.js": "/tiffany-wu/static/js/main.a0de8662.chunk.js",
+    "main.js.map": "/tiffany-wu/static/js/main.a0de8662.chunk.js.map",
+    "runtime-main.js": "/tiffany-wu/static/js/runtime-main.b365180f.js",
+    "runtime-main.js.map": "/tiffany-wu/static/js/runtime-main.b365180f.js.map",
+    "static/js/2.88b305e0.chunk.js": "/tiffany-wu/static/js/2.88b305e0.chunk.js",
+    "static/js/2.88b305e0.chunk.js.map": "/tiffany-wu/static/js/2.88b305e0.chunk.js.map",
+    "static/js/3.37d657b2.chunk.js": "/tiffany-wu/static/js/3.37d657b2.chunk.js",
+    "static/js/3.37d657b2.chunk.js.map": "/tiffany-wu/static/js/3.37d657b2.chunk.js.map",
     "index.html": "/tiffany-wu/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/tiffany-wu/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.57eaebc6.chunk.js.LICENSE.txt": "/tiffany-wu/static/js/2.57eaebc6.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/tiffany-wu/static/media/logo.6ce24c58.svg"
+    "static/css/main.2948fecd.chunk.css.map": "/tiffany-wu/static/css/main.2948fecd.chunk.css.map",
+    "static/js/2.88b305e0.chunk.js.LICENSE.txt": "/tiffany-wu/static/js/2.88b305e0.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/tiffany-wu/static/media/cool-background.73094178.svg",
+    "static/media/headshot.7bd4a6c8.jpg": "/tiffany-wu/static/media/headshot.7bd4a6c8.jpg",
+    "static/media/novaPurc.b5fbf6b0.pdf": "/tiffany-wu/static/media/novaPurc.b5fbf6b0.pdf"
   },
   "entrypoints": [
-    "static/js/runtime-main.1b787bca.js",
-    "static/js/2.57eaebc6.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.fe58f78a.chunk.js"
+    "static/js/runtime-main.b365180f.js",
+    "static/js/2.88b305e0.chunk.js",
+    "static/css/main.2948fecd.chunk.css",
+    "static/js/main.a0de8662.chunk.js"
   ]
 }

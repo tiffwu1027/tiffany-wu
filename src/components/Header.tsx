@@ -9,7 +9,6 @@ import SwipeableViews from 'react-swipeable-views';
 import '../styling/Header.css';
 import { Introduction } from './Introduction';
 import { About } from './About';
-import { faChevronCircleDown, faHome } from '@fortawesome/free-solid-svg-icons';
 import { createMuiTheme } from '@material-ui/core/styles';
 import indigo from '@material-ui/core/colors/indigo';
 import blueGrey from '@material-ui/core/colors/blueGrey';
@@ -19,7 +18,6 @@ import { Research } from './Research';
 import { Contact } from './Contact';
 import { Fun } from './Fun';
 import {Projects } from './Projects';
-import { fade } from '@material-ui/core/styles/colorManipulator';
 
 
 interface TabPanelProps {
@@ -91,7 +89,7 @@ export const Header: React.FC = () => {
     return (
         <div className={classes.root}>
             <ThemeProvider theme={theme}>
-                <AppBar className="app-bar" position="static" style={{background: "rgba(0,76,191,0.8)"}}>
+                <AppBar className="app-bar" position="static" style={{background: "rgba(0,76,221,0.7)"}}>
                     <Tabs value={value} onChange={handleChange} aria-label="simple tabs example" centered>
                         <Tab label="Home" {...a11yProps(0)} />
                         <Tab label="About" {...a11yProps(1)} />

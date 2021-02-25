@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faGithub, faLinkedin, faInstagram, faTwitter} from '@fortawesome/free-brands-svg-icons';
 import headShot from '../images/headshot.jpg';
 import '../styling/About.css';
 
@@ -22,7 +20,8 @@ export const About: React.FC<Props> = () => {
 
       <div className="headShot">
           <img className="headshot-img" src={headShot}></img>
-          <p>Coming soon!</p>
+          <h3>Tiffany Wu</h3>
+          <p>Hi there! I am an aspiring vision science researcher, currently working with <a href="https://psych.ubc.ca/profile/ronald-rensink/">Dr. Rensink</a> in the <a href="https://viscoglab.psych.ubc.ca/">UBC Visual Cognition Lab</a>. I am interested in the intersection between computer science and psychology, specifically in relation to modelling visual attention.</p>
       </div>
    </div>
     );

@@ -1,6 +1,7 @@
 import React from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faGithub, faLinkedin, faInstagram, faTwitter} from '@fortawesome/free-brands-svg-icons';
+import '../styling/Footer.css'
 
 let githubLink : string = "https://github.com/tiffwu1027";
 let linkedInLink: string = "https://www.linkedin.com/in/tiffany-wu-1027/";
@@ -13,12 +14,12 @@ interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({}) => {
         return (
-            <footer>
+            <footer className="footer">
                 <ul className="social">
-               <li><a href={githubLink}><FontAwesomeIcon icon={faGithub} size="lg" color="black" /></a></li>
-               <li><a href={linkedInLink}><FontAwesomeIcon icon={faLinkedin} size="lg" color="black" /></a></li>
-               <li><a href={instagramLink}><FontAwesomeIcon icon={faInstagram} size="lg" color="black" /></a></li>
-               <li><a href={twitterLink}><FontAwesomeIcon icon={faTwitter} size="lg" color="black" /></a></li>
+               <li><a href={githubLink}><FontAwesomeIcon icon={faGithub} size="lg" color="white"/></a></li>
+               <li><a href={linkedInLink}><FontAwesomeIcon icon={faLinkedin} size="lg" color="white" /></a></li>
+               <li><a href={instagramLink}><FontAwesomeIcon icon={faInstagram} size="lg" color="white" /></a></li>
+               <li><a href={twitterLink}><FontAwesomeIcon icon={faTwitter} size="lg" color="white" /></a></li>
             </ul>
             </footer>
         );

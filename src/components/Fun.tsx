@@ -12,9 +12,6 @@ export const Fun: React.FC<FunProps> = ({}) => {
                 <ReactPlayer 
                 url="https://youtu.be/oAZbW928zRk"
                 />
-                <ReactPlayer 
-                url="https://youtu.be/ZlXDG7Sp7VM"
-                />
                 <hr />
                 <h1>Climb</h1>
             </div>

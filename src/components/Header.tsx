@@ -11,7 +11,6 @@ import { Introduction } from './Introduction';
 import { About } from './About';
 import { faChevronCircleDown, faHome } from '@fortawesome/free-solid-svg-icons';
 import { createMuiTheme } from '@material-ui/core/styles';
-import blue from '@material-ui/core/colors/blue';
 import indigo from '@material-ui/core/colors/indigo';
 import blueGrey from '@material-ui/core/colors/blueGrey';
 import grey from '@material-ui/core/colors/grey';
@@ -20,6 +19,7 @@ import { Research } from './Research';
 import { Contact } from './Contact';
 import { Fun } from './Fun';
 import {Projects } from './Projects';
+import { fade } from '@material-ui/core/styles/colorManipulator';
 
 
 interface TabPanelProps {
@@ -59,7 +59,7 @@ function a11yProps(index: any) {
 const useStyles = makeStyles((theme: Theme) => ({
     root: {
         flexGrow: 1,
-        backgroundColor: 'grey',
+        // backgroundColor: 'grey',
     },
 }));
 
@@ -70,7 +70,12 @@ export const Header: React.FC = () => {
     const theme = createMuiTheme({
         palette: {
             primary: indigo,
-            secondary: grey
+            secondary: {
+                light: indigo[50],
+                dark: indigo[200],
+                main: indigo[100],
+
+            }
         }
     });
     const [value, setValue] = React.useState(0);
@@ -86,7 +91,7 @@ export const Header: React.FC = () => {
     return (
         <div className={classes.root}>
             <ThemeProvider theme={theme}>
-                <AppBar className="app-bar" position="static" style={{background: 'transparent', boxShadow: 'none'}}>
+                <AppBar className="app-bar" position="static" style={{background: "rgba(0,76,191,0.8)"}}>
                     <Tabs value={value} onChange={handleChange} aria-label="simple tabs example" centered>
                         <Tab label="Home" {...a11yProps(0)} />
                         <Tab label="About" {...a11yProps(1)} />

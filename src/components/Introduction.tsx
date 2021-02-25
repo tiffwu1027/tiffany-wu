@@ -9,7 +9,7 @@ export const Introduction: React.FC = () => {
       <div className="row banner">
          <div className="banner-text">
             <h1 className="responsive-headline">Tiffany Wu</h1>
-            <h3>Hello!</h3>
+            <h3>Hello World!</h3>
             <hr />
 
          </div>

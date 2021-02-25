@@ -22,6 +22,7 @@ export const About: React.FC<Props> = () => {
 
       <div className="headShot">
           <img className="headshot-img" src={headShot}></img>
+          <p>Coming soon!</p>
       </div>
    </div>
     );

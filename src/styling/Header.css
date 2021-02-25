@@ -11,3 +11,7 @@ li {
 #nav-wrap {
     text-align: center;
 }
+
+.app-bar {
+    background-color: rgba(1, 1, 1, 0.5);
+}

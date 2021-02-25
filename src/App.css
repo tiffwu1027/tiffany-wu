@@ -1,7 +1,19 @@
 .App {
   text-align: center;
-  /* background-image: url('./images/trianglify-lowres.png');
-  background-size: cover; */
+  position: relative;
+}
+
+.App::after {
+  content: "";
+  background-image: url('./images/cool-background.svg');
+  background-size: cover;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 .App-logo {
@@ -39,6 +51,6 @@
   }
 }
 
-body > #root > div {
+/* body > #root > div {
   height: 90vh;
-}
+} */

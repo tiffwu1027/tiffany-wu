@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import SwipeableViews from 'react-swipeable-views';
 import '../styling/Header.css';
-import { Introduction } from './Introduction';
+import { Home } from './Home';
 import { About } from './About';
 import { createMuiTheme } from '@material-ui/core/styles';
 import indigo from '@material-ui/core/colors/indigo';
@@ -105,7 +105,7 @@ export const Header: React.FC = () => {
                     onChangeIndex={handleChangeIndex}
                 >
                     <TabPanel value={value} index={0} dir={theme.direction}>
-                        <Introduction></Introduction>
+                        <Home></Home>
                     </TabPanel>
                     <TabPanel value={value} index={1} dir={theme.direction}>
                         <About></About>

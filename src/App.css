@@ -5,8 +5,8 @@
 
 .App::after {
   content: "";
-  background-image: url('./images/cool-background.svg');
-  background-size: cover;
+  /* background-image: url('./images/cool-background.svg'); */
+  /* background-size: cover; */
   opacity: 0.6;
   top: 0;
   left: 0;

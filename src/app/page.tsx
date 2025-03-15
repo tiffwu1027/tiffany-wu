@@ -26,7 +26,7 @@ export default function Home() {
         <div className="flex justify-center">
           <Image
           className="rounded-full"
-          src="/headshot.jpg"
+          src="/tiffany-wu/headshot.jpg"
           alt="headshot image"
           width={300}
           height={300}

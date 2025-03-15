@@ -57,17 +57,17 @@ export default function Home() {
           <h3 className="text-3xl py-5 text-center font-semibold">Publications</h3>
           <h4 className="text-2xl py-2">Paper publications</h4>
           <p className="text-md">
-          Lallé, S., Wu, T., & Conati, C. (2020, October). Gaze-driven links for magazine style narrative visualizations. In 2020 IEEE Visualization Conference (VIS) (pp. 166-170). IEEE.<a href="/msnv.pdf" target="_blank" className="hover:underline hover:text-blue-500">[pdf]</a> 
+          Lallé, S., Wu, T., & Conati, C. (2020, October). Gaze-driven links for magazine style narrative visualizations. In 2020 IEEE Visualization Conference (VIS) (pp. 166-170). IEEE.<a href="/tiffany-wu/msnv.pdf" target="_blank" className="hover:underline hover:text-blue-500">[pdf]</a> 
           </p>
           <p className="text-md">
           Wu, T., & Tsotsos, J. K. (2025). Real-world visual search goes beyond eye movements: Active searchers select 3D scene viewpoints too. bioRxiv, 2025-02.<a href="https://www.biorxiv.org/content/10.1101/2025.02.08.637269.full.pdf" className="hover:underline hover:text-blue-500">[pdf]</a>
           </p>
           <h4 className="text-2xl py-2">Posters</h4>
           <p className="text-md">
-          Wu, T., & Tsotsos, J. K. (2024). Viewpoint selection in active visual search. Journal of Vision, 24(10), 328-328.<a href="/vss2024.pdf" target="_blank" className="hover:underline hover:text-blue-500">[pdf]</a>
+          Wu, T., & Tsotsos, J. K. (2024). Viewpoint selection in active visual search. Journal of Vision, 24(10), 328-328.<a href="/tiffany-wu/vss2024.pdf" target="_blank" className="hover:underline hover:text-blue-500">[pdf]</a>
           </p>
           <p className="text-md">
-          Wu, T., & Tsotsos, J. K. (2023). Active visual search in a 3D real world environment. Journal of Vision, 23(9), 4713-4713.<a href="/vss2023.pdf" target='_blank' className="hover:underline hover:text-blue-500">[pdf]</a>
+          Wu, T., & Tsotsos, J. K. (2023). Active visual search in a 3D real world environment. Journal of Vision, 23(9), 4713-4713.<a href="/tifany-wu/vss2023.pdf" target='_blank' className="hover:underline hover:text-blue-500">[pdf]</a>
           </p>
           <h4 className="text-2xl py-2">Master<span>&apos;</span>s Thesis</h4>
           <p className="text-md">

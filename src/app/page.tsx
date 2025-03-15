@@ -67,7 +67,7 @@ export default function Home() {
           Wu, T., & Tsotsos, J. K. (2024). Viewpoint selection in active visual search. Journal of Vision, 24(10), 328-328.<a href="/tiffany-wu/vss2024.pdf" target="_blank" className="hover:underline hover:text-blue-500">[pdf]</a>
           </p>
           <p className="text-md">
-          Wu, T., & Tsotsos, J. K. (2023). Active visual search in a 3D real world environment. Journal of Vision, 23(9), 4713-4713.<a href="/tifany-wu/vss2023.pdf" target='_blank' className="hover:underline hover:text-blue-500">[pdf]</a>
+          Wu, T., & Tsotsos, J. K. (2023). Active visual search in a 3D real world environment. Journal of Vision, 23(9), 4713-4713.<a href="/tiffany-wu/vss2023.pdf" target='_blank' className="hover:underline hover:text-blue-500">[pdf]</a>
           </p>
           <h4 className="text-2xl py-2">Master<span>&apos;</span>s Thesis</h4>
           <p className="text-md">
